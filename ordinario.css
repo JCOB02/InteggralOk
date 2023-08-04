@@ -1,0 +1,130 @@
+body {
+	background: linear-gradient(to right, #1b1b32, rgb(50, 50, 103));
+	color: antiquewhite;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+.saludo {
+	background-color: #1b1b32;
+	border: 2px solid antiquewhite;
+	color: antiquewhite;
+	border-radius: 15px;
+	font-family: 'Courier New', Courier, monospace;
+	font-style: bold;
+}
+
+.saludo:hover {
+	background-color: #1b1b32;
+	color: antiquewhite;
+	transition: .3s ease-in-out;
+}
+
+img {
+	display: flex;
+	position: absolute;
+	left: 1090px;
+	bottom: 350px;
+}
+
+.layout{
+	text-align: center;
+	justify-content: center;
+	grid:
+		"header" auto
+		"main" 1fr
+		"footer" auto
+			/ 1fr;
+		gap: 8px;
+		margin-top: 30px;
+		border: 3px solid rgb(221, 207, 189);
+		border-radius: 25px;
+}
+	
+.resultado{
+	margin: 5px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.entradas{
+	margin: 5px;
+	text-align: center;
+	
+}
+
+.encabezado{
+	text-align: center;
+	font-size: 40px;
+}
+
+.principal{
+	text-indent: 10px;
+	margin-top: 20px;
+}
+
+.piePagina{
+	text-align: center;
+}
+
+.leyenda{
+	font-size: 14px;
+}
+
+.integraciones{
+	margin: 5px;
+	text-align: center;
+}
+
+.inputs {
+	font-family: 'Courier New', Courier, monospace;
+	border: 0;
+    border-radius: 0px;
+    background-color: rgba(240, 230, 212, 0);
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    box-shadow: none;
+    text-align: center;
+    transition: all .4s ease-in-out;
+	text-align: center;
+	color: antiquewhite;
+}
+
+.inputs:hover, .inputs:focus {
+	background-color: antiquewhite;
+	border-radius: 60px;
+	color: #1b1b32;
+}
+
+.encabezado {
+	margin-top: 15px;
+}
+
+.buttons {
+	cursor: pointer;
+	border: 2px solid gainsboro;
+	border-radius: 35px;
+	background-color: #1b1b3200;
+	color: antiquewhite;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons:hover {
+	border-radius: 35px;
+	transition: .4s ease-in-out;
+	background-color: antiquewhite;
+	color: #1b1b32;
+	transform: scale(1.1);
+	border: 2px outset #1b1b32;
+}
+
+button:focus {
+	background-color: rgb(175, 229, 175);
+	color: #131321;
+}
+
+#respuesta {
+	justify-content: center;
+	color: antiquewhite;
+	font-family: 'Courier New', Courier, monospace;
+}

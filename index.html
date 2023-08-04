@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>webApp - Ordinario cálculo integral</title>
+		<!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+		<script type="text/javascript" src="/eel.js"></script>
+		<script type="text/javascript" src="ordinario.js"></script>
+		<link rel="stylesheet" type="text/css" href="./ordinario.css" />
+	</head>
+	<body>
+	
+	<div class="encabezado">IntEggral<p class="leyenda">webApp - Ordinario cálculo integral</p></div>
+		<section class="layout">
+		<div class="principal">
+			
+			<span class="saludo" style='font-size: 30px; width: 165px;'>!Bienvenid@!</span><img src="png-transparent-chicken-egg-broiler-eggs-3d-computer-graphics-food-animals-removebg-preview.png">
+			<p>Escribe la ecuación que quieres integrar:</p>
+			<div class="entradas">
+				<p><label for="ecuacion1">f(x) =</label>
+				<input type="text" id="ecuacion1" name="ecuacion" class="inputs" placeholder="f(x)"><br>
+				<p><label for="ecuacion2">g(x) =</label>
+				<input type="text" id="ecuacion2" name="ecuacion" class="inputs" placeholder="g(x)"><br>
+			</div>
+			<p>Escribe los límites de integración:</p>
+			<div class="entradas">
+				<p><label for="limite_a">Límite inferior (a): </label>
+				<input class="inputs" type="text" id="limite_a" name="limite_a" maxlength="7" size="5" placeholder="a"></br></p>
+				<p><label for="limite_b">Límite superior (b): </label>
+				<input class="inputs" type="text" id="limite_b" name="limite_b" maxlength="7" size="5" placeholder="b"></br></p>
+			</div>
+			<p>Escoge el tipo de integración a realizar:</p>
+			<div class="integraciones">
+				<button onclick=integrar_js() class="buttons">Integral definida</button>
+				<button onclick=volumen_js() class="buttons">Volumen de revolución</button>
+			</div>
+			<p> * * * </p>
+			<p>El resultado es:</p>
+			<div class="resultado"><p id="respuesta">Respuesta</p>
+			</div>
+		</div>
+		<div class="piePagina">webApp - Ordinario cálculo integral
+			<div style='text-align: center; text-indent: 15px; padding-top: 10px;'>Programó: <label>Julio O. Baleón</label>
+			</div>
+		</div>
+	</section>
+	</body>
+</html>
